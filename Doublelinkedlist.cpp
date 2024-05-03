@@ -157,7 +157,7 @@ void revtraverse()
         while (currentNode != NULL)
         {
             cout << currentNode->noMhs << " " << currentNode->name << endl;
-            currentNode = currentNode = prev;
+            currentNode = currentNode;
         }
     }
 }
@@ -168,7 +168,7 @@ void searchData()
     {
         cout << "\nList is empty" << endl;
     }
-    Node *prev, *curr;
+    Node *prev, *curr, prev;
     prev = curr = NULL;
     cout << "\nEnter the roll number of the student whose record you want to search: " << endl;
     int num;
@@ -184,3 +184,7 @@ void searchData()
     }
 }
 
+int main()
+{
+    
+}
