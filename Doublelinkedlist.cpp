@@ -173,4 +173,14 @@ void searchData()
     cout << "\nEnter the roll number of the student whose record you want to search: " << endl;
     int num;
     cin >> num;
+
+    if (search(num, &prev, &curr)== false)
+    cout << "nRcord not found" << endl;
+    else
+    {
+        cout << "\nRecord found" << endl;
+        cout << "\nRoll number: " << curr->noMhs << endl;
+        cout << "\nName: " << curr->name << endl;
+    }
 }
+
